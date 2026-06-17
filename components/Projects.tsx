@@ -9,7 +9,7 @@ const PROJECTS = [
     subtitle: "Peer-support community platform",
     tagline: "Where secure engineering meets human sensitivity.",
     description:
-      "A full-stack community platform serving users in sensitive addiction-recovery journeys. Passwordless Google OAuth, three-tier RBAC enforced server-side, and MongoDB transactions guaranteeing ACID consistency.",
+      "A full-stack community platform serving users in sensitive addiction-recovery journeys. Passwordless Google OAuth onboarding, three-tier RBAC enforced server-side, and MongoDB transactions guaranteeing ACID consistency.",
     tags: ["Next.js 15", "TypeScript", "Google OAuth", "MongoDB", "Node.js", "JWT", "RBAC", "Tailwind CSS"],
     status: "live" as const,
     featured: true,
@@ -22,118 +22,74 @@ const PROJECTS = [
     gradient: "from-brand-500 via-violet-500 to-purple-600",
     gradientLight: "from-brand-500/10 via-violet-500/5 to-transparent",
     icon: "🛡️",
-    githubUrl: "https://github.com/mustansar",
-    liveUrl: "#",
+    githubUrl: "https://github.com/mustansar77",
+    liveUrl: "https://www.recoverycircle.org/",
   },
   {
     id: "2",
-    title: "Docu-Pulse",
-    subtitle: "GitHub documentation automation",
-    tagline: "Zero documentation drift. Every merge, guaranteed.",
+    title: "Waiterless",
+    subtitle: "Restaurant management system",
+    tagline: "Dine smarter. No waiter required.",
     description:
-      "A GitHub App that watches every pull request, performs AST-level diff analysis on changed files, and auto-generates or patches JSDoc/markdown documentation in the same PR.",
-    tags: ["Node.js", "TypeScript", "GitHub Apps API", "AST Parsing", "OpenAI API", "Docker", "Webhooks"],
-    status: "wip" as const,
+      "A full-stack restaurant management system where customers scan a QR code to browse the menu, place orders, and pay — all without a waiter. Real-time order tracking for kitchen staff included.",
+    tags: ["Next.js", "TypeScript", "MongoDB", "Node.js", "Tailwind CSS", "QR Code", "Real-time"],
+    status: "live" as const,
     featured: false,
     highlights: [
-      "GitHub App — zero-config install",
-      "AST-level semantic diff analysis",
-      "Auto-patches JSDoc & Markdown",
-      "Slack webhook notifications",
+      "QR-based tableside ordering",
+      "Real-time kitchen dashboard",
+      "Menu & inventory management",
+      "Online payment integration",
     ],
-    gradient: "from-cyan-500 via-teal-500 to-emerald-500",
-    gradientLight: "from-cyan-500/10 via-teal-500/5 to-transparent",
-    icon: "⚡",
-    githubUrl: "https://github.com/mustansar",
-    liveUrl: null,
+    gradient: "from-orange-500 via-amber-500 to-yellow-500",
+    gradientLight: "from-orange-500/10 via-amber-500/5 to-transparent",
+    icon: "🍽️",
+    githubUrl: "https://github.com/mustansar77",
+    liveUrl: "https://waiterless-restaurant.vercel.app/",
   },
   {
     id: "3",
-    title: "RecoveryCircle",
-    subtitle: "Peer-support community platform",
-    tagline: "Where secure engineering meets human sensitivity.",
+    title: "Crave",
+    subtitle: "Food delivery platform",
+    tagline: "FoodPanda replica — rebuilt with new features.",
     description:
-      "A full-stack community platform serving users in sensitive addiction-recovery journeys. Passwordless Google OAuth, three-tier RBAC enforced server-side, and MongoDB transactions guaranteeing ACID consistency.",
-    tags: ["Next.js 15", "TypeScript", "Google OAuth", "MongoDB", "Node.js", "JWT", "RBAC", "Tailwind CSS"],
+      "A feature-rich food delivery platform inspired by FoodPanda, built from scratch with real-time order tracking, multi-restaurant browsing, and a complete rider & admin dashboard.",
+    tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Socket.io", "JWT"],
     status: "live" as const,
-    featured: true,
+    featured: false,
     highlights: [
-      "Google OAuth — passwordless sign-in",
-      "3-tier RBAC enforced server-side",
-      "ACID-safe transactional writes",
-      "WCAG 2.1 AA accessibility",
+      "Multi-restaurant browsing & cart",
+      "Real-time order tracking",
+      "Rider & admin dashboards",
+      "Secure JWT authentication",
     ],
-    gradient: "from-brand-500 via-violet-500 to-purple-600",
-    gradientLight: "from-brand-500/10 via-violet-500/5 to-transparent",
-    icon: "🛡️",
-    githubUrl: "https://github.com/mustansar",
-    liveUrl: "#",
+    gradient: "from-red-500 via-rose-500 to-pink-500",
+    gradientLight: "from-red-500/10 via-rose-500/5 to-transparent",
+    icon: "🍔",
+    githubUrl: "https://github.com/mustansar77",
+    liveUrl: "https://crave-three-kappa.vercel.app/",
   },
   {
     id: "4",
-    title: "Docu-Pulse",
-    subtitle: "GitHub documentation automation",
-    tagline: "Zero documentation drift. Every merge, guaranteed.",
+    title: "VoteSecure",
+    subtitle: "Online voting platform",
+    tagline: "Transparent, tamper-proof digital elections.",
     description:
-      "A GitHub App that watches every pull request, performs AST-level diff analysis on changed files, and auto-generates or patches JSDoc/markdown documentation in the same PR.",
-    tags: ["Node.js", "TypeScript", "GitHub Apps API", "AST Parsing", "OpenAI API", "Docker", "Webhooks"],
-    status: "wip" as const,
-    featured: false,
-    highlights: [
-      "GitHub App — zero-config install",
-      "AST-level semantic diff analysis",
-      "Auto-patches JSDoc & Markdown",
-      "Slack webhook notifications",
-    ],
-    gradient: "from-cyan-500 via-teal-500 to-emerald-500",
-    gradientLight: "from-cyan-500/10 via-teal-500/5 to-transparent",
-    icon: "⚡",
-    githubUrl: "https://github.com/mustansar",
-    liveUrl: null,
-  },
-  {
-    id: "5",
-    title: "RecoveryCircle",
-    subtitle: "Peer-support community platform",
-    tagline: "Where secure engineering meets human sensitivity.",
-    description:
-      "A full-stack community platform serving users in sensitive addiction-recovery journeys. Passwordless Google OAuth, three-tier RBAC enforced server-side, and MongoDB transactions guaranteeing ACID consistency.",
-    tags: ["Next.js 15", "TypeScript", "Google OAuth", "MongoDB", "Node.js", "JWT", "RBAC", "Tailwind CSS"],
+      "A secure online voting platform with real-time result tallying, voter authentication, and an admin dashboard for managing elections, candidates, and audit logs.",
+    tags: ["Next.js", "TypeScript", "MongoDB", "Node.js", "JWT", "Tailwind CSS", "Chart.js"],
     status: "live" as const,
-    featured: true,
-    highlights: [
-      "Google OAuth — passwordless sign-in",
-      "3-tier RBAC enforced server-side",
-      "ACID-safe transactional writes",
-      "WCAG 2.1 AA accessibility",
-    ],
-    gradient: "from-brand-500 via-violet-500 to-purple-600",
-    gradientLight: "from-brand-500/10 via-violet-500/5 to-transparent",
-    icon: "🛡️",
-    githubUrl: "https://github.com/mustansar",
-    liveUrl: "#",
-  },
-  {
-    id: "6",
-    title: "Docu-Pulse",
-    subtitle: "GitHub documentation automation",
-    tagline: "Zero documentation drift. Every merge, guaranteed.",
-    description:
-      "A GitHub App that watches every pull request, performs AST-level diff analysis on changed files, and auto-generates or patches JSDoc/markdown documentation in the same PR.",
-    tags: ["Node.js", "TypeScript", "GitHub Apps API", "AST Parsing", "OpenAI API", "Docker", "Webhooks"],
-    status: "wip" as const,
     featured: false,
     highlights: [
-      "GitHub App — zero-config install",
-      "AST-level semantic diff analysis",
-      "Auto-patches JSDoc & Markdown",
-      "Slack webhook notifications",
+      "Tamper-proof ballot submission",
+      "Real-time result tallying",
+      "Admin election management",
+      "Full audit log trail",
     ],
     gradient: "from-cyan-500 via-teal-500 to-emerald-500",
     gradientLight: "from-cyan-500/10 via-teal-500/5 to-transparent",
-    icon: "⚡",
-    githubUrl: "https://github.com/mustansar",
-    liveUrl: null,
+    icon: "🗳️",
+    githubUrl: "https://github.com/mustansar77",
+    liveUrl: "https://votesecure-two.vercel.app/",
   },
 ] as const;
 
@@ -175,7 +131,7 @@ export default function Projects() {
             </p>
           </div>
           <a
-            href="https://github.com/mustansar"
+            href="https://github.com/mustansar77"
             target="_blank" rel="noopener noreferrer"
             aria-label="Browse more projects on GitHub"
             className="btn btn-ghost shrink-0 self-start"
@@ -329,7 +285,7 @@ export default function Projects() {
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <a
-              href="https://github.com/mustansar"
+              href="https://github.com/mustansar77"
               target="_blank" rel="noopener noreferrer"
               className="btn btn-ghost !text-sm !py-2.5 !px-5"
             >

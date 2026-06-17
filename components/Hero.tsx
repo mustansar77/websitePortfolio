@@ -86,7 +86,7 @@ export default function Hero() {
     <section
       id="hero"
       aria-labelledby="hero-heading"
-      className="hero-bg dot-grid relative min-h-screen pt-36 sm:pt-0  flex items-center overflow-hidden"
+      className="hero-bg dot-grid relative min-h-screen py-36 sm:pt-0  flex items-center overflow-hidden"
     >
       <canvas ref={canvasRef} aria-hidden="true" className="absolute inset-0 w-full h-full pointer-events-none" />
 
